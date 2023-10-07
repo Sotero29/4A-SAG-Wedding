@@ -4,26 +4,8 @@
             <h1 class="left__content">
                 Login
             </h1>
-            <ul class="right__content">
-                <li>
-                    <a href="index.php?pagina=inicio">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </li>
-                <li>
-                    Login
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<div class="d-flex justify-content-center text-center">
-
-    <form class="p-5 bg-light" method="post">
+            <div class="d-flex justify-content-center text-center">
+            <form class="p-5 bg-light" method="post">
         <div class="form-group">
             <label for="email">Email address:</label>
             <div class="input-group">
@@ -49,5 +31,8 @@
         ?>
         <button type="submit" class="btn btn-primary">Ingresar</button>
     </form>
-
-</div>
+    </div>    
+        </div>
+    </div>
+</section>
+    

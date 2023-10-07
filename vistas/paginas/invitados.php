@@ -34,11 +34,8 @@ $usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null);
                     Guests
                 </li>
             </ul>
-        </div>
-    </div>
-</section>
-<div class="conatiner-fluid">
-    <div class="container py-5">
+            <div class="conatiner-fluid">
+    <div class="container py-6">
         <table class="table table">
             <thead>
                 <tr>
@@ -93,3 +90,6 @@ $usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null);
 
     </div>
 </div>
+        </div>
+    </div>
+</section>

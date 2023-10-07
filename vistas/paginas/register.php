@@ -4,24 +4,8 @@
             <h1 class="left__content">
                 Register
             </h1>
-            <ul class="right__content">
-                <li>
-                    <a href="index.php?pagina=inicio">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </li>
-                <li>
-                    Register
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
 
-<div class="d-flex justify-content-center text-center">
+            <div class="d-flex justify-content-center text-center">
     <form class="p-5 bg-light" method="post">
         <div class="form-group">
             <label for="name">Name:</label>
@@ -70,3 +54,8 @@
     </form>
 
 </div>
+            
+        </div>
+    </div>
+</section>
+
