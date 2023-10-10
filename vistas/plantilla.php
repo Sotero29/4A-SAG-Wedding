@@ -72,21 +72,21 @@ session_start();
                     <ul class="main-menu">
                     <?php if ($_GET["pagina"] == "login"): ?>
                             <li class="active">
-                                <a href="index.php?pagina=login">Login</a>
+                                <a href="index.php?pagina=login">Iniciar</a>
                             </li>
                         <?php else: ?>
                             <li class="active">
-                                <a href="index.php?pagina=login">Login</a>
+                                <a href="index.php?pagina=login">Iniciar</a>
                             </li>
                         <?php endif ?>
 
                         <?php if ($_GET["pagina"] == "register"): ?>
                             <li class="active">
-                                <a href="index.php?pagina=register">Register</a>
+                                <a href="index.php?pagina=register">Registro</a>
                             </li>
                         <?php else: ?>
                             <li class="active">
-                                <a href="index.php?pagina=register">Register</a>
+                                <a href="index.php?pagina=register">Registro</a>
                             </li>
                         <?php endif ?>
                         <?php if ($_GET["pagina"] == "inicio"): ?>
@@ -231,13 +231,13 @@ session_start();
                         <?php if ($_GET["pagina"] == "invitados"): ?>
                                     <li class="subtwohober">
                                         <a href="index.php?pagina=invitados">
-                                            <span>Edit</span>
+                                            <span>Editar</span>
                                         </a>
                                     </li>
                                 <?php else: ?>
                                     <li class="active">
                                         <a href="index.php?pagina=invitados">
-                                            <span>Edit</span>
+                                            <span>Editar</span>
                                         </a>
                                     </li>
                                 <?php endif ?>  

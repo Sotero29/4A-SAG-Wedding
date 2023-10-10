@@ -23,9 +23,6 @@ class ModeloFormularios
         $stmt = null;
 
     }
-
-
-   
     static public function mdlSeleccionarRegistros($tabla, $item, $valor)
     {
         if ($item == null && $valor == null) {
