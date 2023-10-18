@@ -14,7 +14,7 @@
                     <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
                 </div>
                 <input type="text" class="form-control" placeholder="Name" id="name" name="registerName">
-            </div>
+            </div> 
         </div>
         <div class="form-group">
             <label for="email">Email address:</label>
@@ -48,6 +48,15 @@
                 </script>';
 
             echo '<div class="alert-success"> El usuario ha sido registrado</div>';
+        }
+        if ($registro == "error") {
+            echo '<script>
+            if (window.history.replaceState){
+                window.history.replaceState(null, null, window.location.gref);
+            }
+            </script>';
+
+            echo '<div class="alert-danger"> Error! Nose permiten caracteres especiales.</div>';
         }
         ?>
         <button type="submit" class="btn btn-primary">Submit</button>
