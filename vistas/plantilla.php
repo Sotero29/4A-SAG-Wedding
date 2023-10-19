@@ -70,23 +70,23 @@ session_start();
                         <span></span>
                     </div>
                     <ul class="main-menu">
-                    <?php if ($_GET["pagina"] == "login"): ?>
+                    <?php if ($_GET["pagina"] == "iniciar"): ?>
                             <li class="active">
-                                <a href="index.php?pagina=login">Iniciar</a>
+                                <a href="index.php?pagina=iniciar">Iniciar</a>
                             </li>
                         <?php else: ?>
                             <li class="active">
-                                <a href="index.php?pagina=login">Iniciar</a>
+                                <a href="index.php?pagina=iniciar">Iniciar</a>
                             </li>
                         <?php endif ?>
 
-                        <?php if ($_GET["pagina"] == "register"): ?>
+                        <?php if ($_GET["pagina"] == "registro"): ?>
                             <li class="active">
-                                <a href="index.php?pagina=register">Registro</a>
+                                <a href="index.php?pagina=registro">Registro</a>
                             </li>
                         <?php else: ?>
                             <li class="active">
-                                <a href="index.php?pagina=register">Registro</a>
+                                <a href="index.php?pagina=registro">Registro</a>
                             </li>
                         <?php endif ?>
                         <?php if ($_GET["pagina"] == "inicio"): ?>
@@ -228,15 +228,15 @@ session_start();
                             </ul>
                         </li>
 
-                        <?php if ($_GET["pagina"] == "invitados"): ?>
+                        <?php if ($_GET["pagina"] == "usuariosI"): ?>
                                     <li class="subtwohober">
-                                        <a href="index.php?pagina=invitados">
+                                        <a href="index.php?pagina=usuario">
                                             <span>Editar</span>
                                         </a>
                                     </li>
                                 <?php else: ?>
                                     <li class="active">
-                                        <a href="index.php?pagina=invitados">
+                                        <a href="index.php?pagina=usuario">
                                             <span>Editar</span>
                                         </a>
                                     </li>
@@ -298,7 +298,7 @@ session_start();
                                     </a>
                                 </li>
                                 <li class="subtwohober">
-                                    <a href="index.php?pagina=invitados">
+                                    <a href="index.php?pagina=usuario">
                                         <span>Guests</span>
                                     </a>
                                 </li>
@@ -323,7 +323,7 @@ session_start();
                             <a href="index.php?pagina=contact">Contact</a>
                         </li>
                         <li>
-                            <a href="index.php?pagina=login">Login</a>
+                            <a href="index.php?pagina=iniciar">iniciar</a>
                         </li>
                     </ul>
 
@@ -360,9 +360,9 @@ session_start();
                 $_GET["pagina"] == "event" ||
                 $_GET["pagina"] == "error" ||
                 $_GET["pagina"] == "blog-single" ||
-                $_GET["pagina"] == "login" ||
-                $_GET["pagina"] == "register" ||
-                $_GET["pagina"] == "invitados" ||
+                $_GET["pagina"] == "iniciar" ||
+                $_GET["pagina"] == "registro" ||
+                $_GET["pagina"] == "usuario" ||
                 $_GET["pagina"] == "editar"
             ) {
                 $p = $_GET["pagina"];

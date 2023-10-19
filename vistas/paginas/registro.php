@@ -13,7 +13,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
                 </div>
-                <input type="text" class="form-control" placeholder="Name" id="name" name="registerName">
+                <input type="text" class="form-control" placeholder="Name" id="name" name="registroNombre">
             </div> 
         </div>
         <div class="form-group">
@@ -22,7 +22,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
                 </div>
-                <input type="email" class="form-control" placeholder="Enter email" id="email" name="registerEmail">
+                <input type="email" class="form-control" placeholder="Enter email" id="email" name="registroEmail"> 
             </div>
         </div>
         <div class="form-group">
@@ -32,7 +32,7 @@
                     <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
                 </div>
                 <input type="password" class="form-control" placeholder="Enter password" id="pwd"
-                    name="registerPassword">
+                    name="registroPassword">
             </div>
         </div>
         <?php /*

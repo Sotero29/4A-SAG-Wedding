@@ -3,19 +3,19 @@ class ControladorFormularios
 {   
     static public function crtRegistro()
     {
-        if (isset($_POST["registerName"])) {
+        if (isset($_POST["registroNombre"])) {
             if (
-                preg_match("/^[a-zA-Z ]+$/", $_POST["registerName"]) && 
-                preg_match('/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})+$/', $_POST ["registerEmail"]) && 
-                preg_match('/^[0-9a-zA-Z]+$/', $_POST ["registerPassword"])){
+                preg_match("/^[a-zA-Z ]+$/", $_POST["registroNombre"]) && 
+                preg_match('/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})+$/', $_POST ["registroEmail"]) && 
+                preg_match('/^[0-9a-zA-Z]+$/', $_POST ["registroPassword"])){
                 
                 $tabla = "registros_sag";
-                $token = md5($_POST["registerName"] . "+" . $_POST ["registerEmail"]);
+                $token = md5($_POST["registroNombre"] . "+" . $_POST ["registroEmail"]);
                 
                 $datos = array("token" => $token,
-                    "nombre" => $_POST["registerName"],
-                    "email" => $_POST["registerEmail"],
-                    "password" => $_POST["registerPassword"]
+                    "nombre" => $_POST["registroNombre"],
+                    "email" => $_POST["registroEmail"],
+                    "password" => $_POST["registroPassword"]
                 );
                 
                 $respuesta = ModeloFormularios::mdlRegistro($tabla, $datos);
